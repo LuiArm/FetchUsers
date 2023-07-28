@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-struct  Users: Codable {
+struct  Users: Codable, Identifiable {
     var id: String
     var isActive: Bool
     var name: String
@@ -28,16 +28,25 @@ struct ContentView: View {
     @State private var users = [Users]()
     
     var body: some View {
-        List(users, id: \.id){item in
-            VStack(alignment: .leading){
-                Text(item.name)
-                    .font(.headline)
-                Text(item.company)
+        NavigationStack{
+            List{
+                ForEach(users) { user in
+                    NavigationLink{
+                        DetailView(user: user)
+                    }label: {
+                        VStack(alignment: .leading){
+                            Text(user.name)
+                                .font(.headline)
+                            Text(user.company)
+                        }
+                    }
+                }
+            }
+            .task {
+                await loadData()
             }
         }
-        .task {
-            await loadData()
-        }
+       
     }
     
     func loadData() async{

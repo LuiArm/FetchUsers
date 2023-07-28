@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65FB9062A7302DF0040FA2D /* UserFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65FB9052A7302DF0040FA2D /* UserFetcher.swift */; };
+		F65FB9082A7376CE0040FA2D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65FB9072A7376CE0040FA2D /* DetailView.swift */; };
 		F6C092802A70E13E00391C1D /* FetchUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0927F2A70E13E00391C1D /* FetchUsersApp.swift */; };
 		F6C092822A70E13E00391C1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C092812A70E13E00391C1D /* ContentView.swift */; };
 		F6C092842A70E13F00391C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C092832A70E13F00391C1D /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F65FB9052A7302DF0040FA2D /* UserFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetcher.swift; sourceTree = "<group>"; };
+		F65FB9072A7376CE0040FA2D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F6C0927C2A70E13E00391C1D /* FetchUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C0927F2A70E13E00391C1D /* FetchUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUsersApp.swift; sourceTree = "<group>"; };
 		F6C092812A70E13E00391C1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,8 +60,10 @@
 				F6C0927F2A70E13E00391C1D /* FetchUsersApp.swift */,
 				F6C092812A70E13E00391C1D /* ContentView.swift */,
 				F6C0928D2A717C2300391C1D /* User.swift */,
+				F65FB9052A7302DF0040FA2D /* UserFetcher.swift */,
 				F6C092832A70E13F00391C1D /* Assets.xcassets */,
 				F6C092852A70E13F00391C1D /* Preview Content */,
+				F65FB9072A7376CE0040FA2D /* DetailView.swift */,
 			);
 			path = FetchUsers;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65FB9062A7302DF0040FA2D /* UserFetcher.swift in Sources */,
 				F6C092822A70E13E00391C1D /* ContentView.swift in Sources */,
 				F6C092802A70E13E00391C1D /* FetchUsersApp.swift in Sources */,
+				F65FB9082A7376CE0040FA2D /* DetailView.swift in Sources */,
 				F6C0928E2A717C2300391C1D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
